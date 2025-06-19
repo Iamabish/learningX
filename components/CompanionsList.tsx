@@ -2,7 +2,6 @@ import React from "react";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -24,7 +23,7 @@ const CompanionsList = ({ title, companions, classNames }: Props) => {
 
   return (
     <article className={cn("companion-list", classNames)}>
-      <h2 className="font-bold text-3xl ">recent sessions</h2>
+      <h2 className="font-bold text-3xl ">{title}</h2>
       <Table>
         <TableHeader>
           <TableRow>
